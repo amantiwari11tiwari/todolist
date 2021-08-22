@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+html{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after
+{
+  box-sizing: inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body
+{
+    background-color:aqua;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+}
+  header
+  {
+    border-bottom:solid 1px black;
+    background-color: chartreuse;
+    box-shadow: 0 1px 2px darkgray;
+    height: 44px;
+    width: 100;  
   }
-}
+    nav
+    {
+      height: 100%;
+      max-width: 922px;
+      display: flex;
+      align-items: center;
+      margin: auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    }
+    .content
+    {
+      display: flex;
+      margin: auto;
+      max-width: 922px;
 
-.App-link {
-  color: #61dafb;
-}
+    }
+    .sidebar
+    {
+      user-select: none;
+      width: 266px;
+      height: 100vh;
+      padding-top: 74px;
+      border-right: 1px solid greenyellow;
+      background-color: grey ;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+    }
+    .inbox{
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 26px;
+      text-align: center;
+    }
+    .today{
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 26px;
+      text-align: center;
+    }
+    .after7{
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 26px;
+      text-align: center;
+    }
+      
+    
+  
